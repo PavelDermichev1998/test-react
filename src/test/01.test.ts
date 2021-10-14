@@ -1,9 +1,15 @@
 import {mult, splitIntoWords, sum} from "./01";
 
 test('sum should be correct', () => {
-    let a = 1;
-    let b = 2;
-    let c = 3;
+    let a: number;
+    let b: number;
+    let c: number;
+
+    beforeEach(() => {
+        a = 1
+        b = 2
+        c = 3
+    });
 
     const result1 = sum(a, b);
     const result2 = sum(a, c);
